@@ -1,0 +1,78 @@
+<nav>
+    <h1>E - Commerce</h1>
+    <ul>
+        <!-- <li><a routerLink="/home">Home</a></li> -->
+        <li><a routerLink="/add-product">Add Product</a></li>
+        <li><a routerLink="/seller-home">List</a></li>
+        <li><a href="#">Seller Name</a></li>
+    </ul>
+    <div class="searchDiv">
+        <input type="text" placeholder="Search for the Products">
+        <button>Search</button>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="card rounded py-2">
+                <div class="text-center">
+                    <h1>Update Product Here</h1>
+                </div>
+                <form class="py-4 px-3" [formGroup]="updateProductForm" (ngSubmit)="submit(updateProductForm.value)">
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Product Name :</label>
+                        <input formControlName="name" placeholder="Enter Name" autocomplete="off" type="name"
+                            class="form-control" id="exampleInputName" ngModel="{{productItem?.name}}">
+                        <span class="text-danger"
+                            *ngIf="updateProductForm.get('name').invalid && (updateProductForm.get('name').touched || submitted)">
+                            Product Name is required !
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPrice" class="form-label">Product Price :</label>
+                        <input formControlName="price" placeholder="Enter Product Price" autocomplete="off" type="price"
+                            class="form-control" id="exampleInputPrice" ngModel="{{productItem?.price}}">
+                        <span class="text-danger"
+                            *ngIf="updateProductForm.get('price').invalid && (updateProductForm.get('price').touched || submitted)">
+                            Product Price is required !
+                        </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputCategory" class="form-label">Product Category :</label>
+                        <input formControlName="category" placeholder="Enter Product Category" autocomplete="off"
+                            type="category" class="form-control" id="exampleInputCategory" ngModel="{{productItem?.category}}">
+                        <span class="text-danger"
+                            *ngIf="updateProductForm.get('category').invalid && (updateProductForm.get('category').touched || submitted)">
+                            Product Category is required !
+                        </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputDescription" class="form-label">Product Description :</label>
+                        <input formControlName="description" placeholder="Enter Product Description" autocomplete="off"
+                            type="description" class="form-control" id="exampleInputDescription" ngModel="{{productItem?.description}}">
+                        <span class="text-danger"
+                            *ngIf="updateProductForm.get('description').invalid && (updateProductForm.get('description').touched || submitted)">
+                            Product Description is required !
+                        </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputImageUrl" class="form-label">Product Image :</label>
+                        <input formControlName="imageUrl" placeholder="Enter Product Image Url" autocomplete="off"
+                            type="imageUrl" class="form-control" id="exampleInputImageUrl" ngModel="{{productItem?.imageUrl}}">
+                        <span class="text-danger"
+                            *ngIf="updateProductForm.get('imageUrl').invalid && (updateProductForm.get('imageUrl').touched || submitted)">
+                            Product Image Url is required !
+                        </span>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Update Product</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

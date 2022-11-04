@@ -1,0 +1,152 @@
+<nav>
+    <h1>E - Commerce</h1>
+    <ul>
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/signup">Become a Seller</a></li>
+        <li><a routerLink="/signin">Login</a></li>
+        <li><a href="#">Cart(0)</a></li>
+    </ul>
+    <div class="searchDiv">
+        <input type="text" placeholder="Search for the Products">
+        <button>Search</button>
+    </div>
+</nav>
+
+<ngb-carousel *ngIf="popularProducts" class="carousal">
+    <ng-template ngbSlide *ngFor="let items of popularProducts">
+        <div class="picsum-img-wrapper">
+            <img src="{{items?.imageUrl}}" alt="Random first slide" class="w-80" />
+        </div>
+        <div class="carousel-caption">
+            <!-- <h2 class="changeColor">{{items.name}}</h3>
+			<p class="changeColor">{{items.description}}.</p> -->
+        </div>
+    </ng-template>
+
+</ngb-carousel>
+
+<div class="container">
+    <div class="product-list-wrapper">
+        <h1 class="text-center">Trendy Products</h1>
+        <div class="row justify-content-center ">
+            
+            <div class="col-sm-3 cart1" *ngFor="let items of trendyProducts">
+                <div class="product-item">
+                    <img src="{{items.imageUrl}}">
+                </div>
+                <div class="product-Details">
+                    <h2 class="name-head text-center">
+                        {{items.name}}
+                    </h2>
+                    <div class="price-and-color">
+                        <div class="product-price">
+                            <h4>Price: {{items.price}}</h4>
+                        </div>
+                        <div class="product-color">
+                            <h4>Category: {{items.category}}</h4>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="product-footer">
+                    <button class="btn btn-light">View Details</button>
+                    <button class="btn btn-light">Add To Cart</button>
+                </div>
+            </div>
+            <!-- <div class="col-sm-3 cart1">
+                <div class="product-item">
+                    <img src="https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg">
+                </div>
+                <div class="product-Details">
+                    <h2 class="name-head text-center">
+                        New Apple Mobile
+                    </h2>
+                    <div class="price-and-color">
+                        <div class="product-price">
+                            <h4>Price: 100000</h4>
+                        </div>
+                        <div class="product-color">
+                            <h4>Color: Blue</h4>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="product-footer">
+                    <button class="btn btn-info">View Details</button>
+                    <button class="btn btn-info">Add To Cart</button>
+                </div>
+            </div>
+            <div class="col-sm-3 cart1">
+                <div class="product-item">
+                    <img src="https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg">
+                </div>
+                <div class="product-Details">
+                    <h2 class="name-head text-center">
+                        New Apple Mobile
+                    </h2>
+                    <div class="price-and-color">
+                        <div class="product-price">
+                            <h4>Price: 100000</h4>
+                        </div>
+                        <div class="product-color">
+                            <h4>Color: Blue</h4>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="product-footer">
+                    <button class="btn btn-info">View Details</button>
+                    <button class="btn btn-info">Add To Cart</button>
+                </div>
+            </div>
+            <div class="col-sm-3 cart1">
+                <div class="product-item">
+                    <img src="https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg">
+                </div>
+                <div class="product-Details">
+                    <h2 class="name-head text-center">
+                        New Apple Mobile
+                    </h2>
+                    <div class="price-and-color">
+                        <div class="product-price">
+                            <h4>Price: 100000</h4>
+                        </div>
+                        <div class="product-color">
+                            <h4>Color: Blue</h4>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="product-footer">
+                    <button class="btn btn-info">View Details</button>
+                    <button class="btn btn-info">Add To Cart</button>
+                </div>
+            </div>
+           
+            <div class="col-sm-3 cart1">
+                <div class="product-item">
+                    <img src="https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg">
+                </div>
+                <div class="product-Details">
+                    <h2 class="name-head text-center">
+                        New Apple Mobile
+                    </h2>
+                    <div class="price-and-color">
+                        <div class="product-price">
+                            <h4>Price: 100000</h4>
+                        </div>
+                        <div class="product-color">
+                            <h4>Color: Blue</h4>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="product-footer">
+                    <button class="btn btn-info">View Details</button>
+                    <button class="btn btn-info">Add To Cart</button>
+                </div>
+            </div> -->
+        </div>
+    
+    </div>
+</div>

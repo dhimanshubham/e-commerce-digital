@@ -1,0 +1,45 @@
+.card{
+    top: 50%;
+    left: 50%;
+    background: hsla(205,46%,30%,1);
+    background: linear-gradient(90deg,hsla(205,46%,30%,1)0%,hsla(260,29%,36%,1)100%);
+}
+
+.card h1,h3{
+    color: white;
+}
+label{
+    color: white;
+}
+a{
+    color: #ffffffa1;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1a0000;
+    padding: 18px;
+}
+nav h1 , nav ul li a{
+    color: white;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin-left: 38px;
+    font-size: 18px;
+}
+
+.searchDiv{
+    padding-bottom: 12px;
+}
+
+.searchDiv input , .searchDiv button{
+    padding: 5px;
+    border-radius: 4px;
+}

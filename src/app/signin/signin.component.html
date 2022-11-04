@@ -1,0 +1,46 @@
+<nav>
+    <h1>E - Commerce</h1>
+    <ul>
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/signup">Become a Seller</a></li>
+        <li><a routerLink="/signin">Login</a></li>
+        <li><a href="#">Cart(0)</a></li>
+    </ul>
+    <div class="searchDiv">
+        <input type="text" placeholder="Search for the Products">
+        <button>Search</button>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="card rounded py-2">
+                <div class="text-center">
+                    <h1>Login</h1>
+                    <h3>Please Enter Email & Password</h3>
+                </div>
+                <form class="py-3 px-3" [formGroup]="signinForm" (ngSubmit)="submit()">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address :</label>
+                        <input formControlName="email" autocomplete="off" type="email" class="form-control" placeholder="Enter Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <span class="text-danger"
+                            *ngIf="signinForm.get('email').invalid && signinForm.get('email').touched || submitForm">
+                            Email is required !
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password :</label>
+                        <input formControlName="password" placeholder="Enter Password" type="password" class="form-control" id="exampleInputPassword1">
+                        <span class="text-danger"
+                            *ngIf="signinForm.get('password').invalid && signinForm.get('password').touched || submitForm">
+                            Password is required !
+                        </span>
+                    </div>
+                    <button type="submit" class="btn btn-success">Login</button>
+                </form>
+                <a class="ps-3" routerLink='/signup'>New User ? click here for Signup</a>
+            </div>
+        </div>
+    </div>
+</div>

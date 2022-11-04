@@ -1,0 +1,131 @@
+{
+  "posts": [
+    {
+      "firstname": "Shivam",
+      "lastname": "Gautam",
+      "salary": "230000",
+      "email": "shivam@gmail.com",
+      "mobile": "9876543212",
+      "id": 1
+    },
+    {
+      "firstname": "Gautam",
+      "lastname": "Sharma",
+      "salary": "210000",
+      "email": "gautam@gmail.com",
+      "mobile": "5672341287",
+      "id": 2
+    },
+    {
+      "firstname": "Ankit",
+      "lastname": "Kumar",
+      "salary": "897000",
+      "email": "ankit@gmail.com",
+      "mobile": "7890345612",
+      "id": 3
+    },
+    {
+      "firstname": "Parit",
+      "lastname": "SIdhu",
+      "salary": "230000",
+      "email": "parit@gmail.com",
+      "mobile": "9876543212",
+      "id": 4
+    },
+    {
+      "firstname": "Monti",
+      "lastname": "Monti",
+      "salary": "21300",
+      "email": "monti@gmail.com",
+      "mobile": "7654321234",
+      "id": 5
+    }
+  ],
+  "signup": [
+    {
+      "name": "shubham",
+      "email": "shubham@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "mobile": "7896541230",
+      "id": 1
+    },
+    {
+      "name": "shubham",
+      "email": "shubham4@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "mobile": "9876543212",
+      "id": 2
+    },
+    {
+      "name": "dhiman",
+      "email": "dhiman@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "mobile": "7896321450",
+      "id": 3
+    },
+    {
+      "name": "shivam",
+      "email": "shivam@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "mobile": "9078563456",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "name": "I phone13",
+      "price": "100000",
+      "category": "Phone",
+      "description": "A Good Product",
+      "imageUrl": "https://images.indianexpress.com/2021/10/Apple_iPhone13_Inside4.jpg",
+      "id": 1
+    },
+    {
+      "name": "I phone 14",
+      "price": "35001",
+      "category": "Phone",
+      "description": "I phone Product",
+      "imageUrl": "https://s.alicdn.com/@sc04/kf/H8b34874e344c4fcd9b869b401f6a1949Q.jpg_960x960.jpg",
+      "id": 2
+    },
+    {
+      "name": "Laptop",
+      "price": "210000",
+      "category": "Laptop",
+      "description": "A Laptop ",
+      "imageUrl": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
+      "id": 4
+    },
+    {
+      "name": "Shoes",
+      "price": "23000",
+      "category": "Shoes",
+      "description": "Light Weight Shoes",
+      "imageUrl": "https://contents.mediadecathlon.com/p2155510/2d4c941c14f1be10172d8977107329a6/p2155510.jpg?format=auto&quality=70&f=650x0",
+      "id": 5
+    },
+    {
+      "name": "Apple Laptop",
+      "price": "12000",
+      "category": "Apple Product",
+      "description": "Best Product",
+      "imageUrl": "https://www.digitaltrends.com/wp-content/uploads/2021/11/macbook-pro-2021-16.jpg?p=1",
+      "id": 6
+    },
+    {
+      "name": "Bags",
+      "price": "4000",
+      "category": "Bags",
+      "description": "A Good Material bags",
+      "imageUrl": "https://m.media-amazon.com/images/I/61wq2iGSLDL._UL1100_.jpg",
+      "id": 7
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
