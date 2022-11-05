@@ -54,7 +54,6 @@ export class AddProductComponent implements OnInit {
               showConfirmButton: false,
               timer: 1200
             })
-          console.log(res);
           this.addProductForm.reset();
           this.router.navigate(['seller-home']);
 

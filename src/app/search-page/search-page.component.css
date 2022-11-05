@@ -1,0 +1,14 @@
+.searchItem{
+    margin: 30px auto;
+    width: 80%;
+    border-top: 1px solid #00000063;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+}
+
+.imgDesign img{
+    width: 100%;
+    object-fit: contain;
+    height: 175px;
+}

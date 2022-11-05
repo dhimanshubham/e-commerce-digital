@@ -53,7 +53,6 @@ export class SellerUpdateComponent implements OnInit {
       data.id=this.productItem.id;
     }
     this.product.updateProduct(data).subscribe((res:product)=>{
-      console.log(res);
       Swal.fire({
         position: 'top-end',
         icon: 'success',
@@ -70,7 +69,6 @@ export class SellerUpdateComponent implements OnInit {
   productData(){
     let productId = this.route.snapshot.paramMap.get('id');
     productId && this.product.getProduct(productId).subscribe((res:any)=>{
-      console.log(res);
       this.productItem = res;
     })
   }

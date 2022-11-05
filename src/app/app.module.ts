@@ -16,6 +16,9 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { ListingComponent } from './listing/listing.component';
 import { CommonModule } from '@angular/common';
 import { SellerUpdateComponent } from './seller-update/seller-update.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { SearchPageComponent } from './search-page/search-page.component';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { SellerUpdateComponent } from './seller-update/seller-update.component';
     SellerHomeComponent,
     AddProductComponent,
     ListingComponent,
-    SellerUpdateComponent
+    SellerUpdateComponent,
+    HeaderComponent,
+    FooterComponent,
+    SearchPageComponent
   ],
   imports: [
     BrowserModule,

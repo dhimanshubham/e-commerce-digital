@@ -26,17 +26,15 @@ export class SellerHomeComponent implements OnInit {
   getProduct(){
     this.product.getProductList().subscribe((res: any) => {
       this.productList=res;
-      console.log(this.productList);
 
-      let objectURL = "https://t4.ftcdn.net/jpg/02/16/28/19/360_F_216281970_6gotBzdxtFD6vjh7RGmcc4X2JpJz3pr0.jpg";
+      // let objectURL = "https://t4.ftcdn.net/jpg/02/16/28/19/360_F_216281970_6gotBzdxtFD6vjh7RGmcc4X2JpJz3pr0.jpg";
 
-      this.thumbnail = this.Sanitizer.bypassSecurityTrustUrl(objectURL);
+      // this.thumbnail = this.Sanitizer.bypassSecurityTrustUrl(objectURL);
     })
   }
 
   deleteProduct(id:number){
     this.product.deleteProductList(id).subscribe((res)=>{
-      console.log(res);
       Swal.fire({
         position: 'top-end',
         icon: 'success',
@@ -48,7 +46,8 @@ export class SellerHomeComponent implements OnInit {
 
     })
   }
-
+  
  
+
 
 }

@@ -1,0 +1,32 @@
+<nav>
+    <h1 class="logo"><a routerLink="/">E - Commerce</a></h1>
+
+   <div [ngSwitch]="menuType">
+    <ul *ngSwitchCase="'default'">
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/signup">Become a Seller</a></li>
+        <li><a routerLink="/signin">Login</a></li>
+        <li><a href="#">Cart(0)</a></li>
+    </ul>
+   </div>
+
+   <div [ngSwitch]="menuType">
+    <ul *ngSwitchCase="'seller'">
+        <li><a routerLink="/seller-home">Product List</a></li>
+        <li><a routerLink="/seller-add-product">Add Product</a></li>
+        <li><a (click)="logout()">Logout</a></li>
+        <li><a>{{sellerName  | titlecase}}</a></li>
+    </ul>
+   </div>
+    <div class="searchDiv">
+        <input type="text" #searchInput (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Search for the Products">
+        <button (click)="searchpage(searchInput.value)">Search</button>
+        <ul class="search_suggested" *ngIf="searchResult">
+            <li *ngFor="let item of searchResult">
+                <a class="designATag text-center" href="">{{item.name}}</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+

@@ -1,3 +1,4 @@
+import { SearchPageComponent } from './search-page/search-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddProductComponent } from './add-product/add-product.component';
@@ -16,9 +17,11 @@ const routes: Routes = [
  {path:'home',component:HomeComponent},
  {path: 'seller-home',component:SellerHomeComponent,
   canActivate:[AuthGuard]},
-  {path: 'add-product',component:AddProductComponent},
+  {path: 'seller-add-product',component:AddProductComponent},
   {path: 'listing',component:ListingComponent},
   {path: 'seller-update/:id',component:SellerUpdateComponent},
+  {path: 'search/:query',component:SearchPageComponent},
+
 
 ];
 

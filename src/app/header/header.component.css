@@ -1,0 +1,55 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1a0000;
+    padding: 18px;
+}
+nav h1 , nav ul li a{
+    color: white;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin-left: 38px;
+    font-size: 18px;
+    /* color: black; */
+    cursor: pointer;
+}
+
+.searchDiv{
+    padding-bottom: 12px;
+}
+
+.searchDiv input , .searchDiv button{
+    padding: 5px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover{
+    color: #a59696;
+}
+
+
+.search_suggested{
+    position: absolute;
+    display: list-item !important;
+    background-color: #828285;
+    top: 54px;
+    width: 175px;
+    z-index: 10;
+    /* border: 1px solid #ddd; */
+}
+.designATag{
+    margin: 0px !important;
+    color: black !important;
+}

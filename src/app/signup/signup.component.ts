@@ -55,7 +55,6 @@ export class SignupComponent implements OnInit {
     if (this.signupform.valid) {
       this.http.post<any>("http://localhost:3000/signup", this.signupform.value).subscribe((res: any) => {
         alert("signup successfully");
-        console.log(res);
         this.signupform.reset();
         this.router.navigate(['signin']);
 
@@ -66,7 +65,6 @@ export class SignupComponent implements OnInit {
       // this.api.userSignup(this.signupform.value).
       // subscribe((res:any)=>{
       // alert("signup successfully");
-      // console.log(res);
       // this.signupform.reset();
       // this.router.navigate(['signin']);
       // });
