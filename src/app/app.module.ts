@@ -19,6 +19,8 @@ import { SellerUpdateComponent } from './seller-update/seller-update.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchPageComponent } from './search-page/search-page.component';
+import { ProductDetailComponent } from './product-detail/product-detail/product-detail.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -33,7 +35,8 @@ import { SearchPageComponent } from './search-page/search-page.component';
     SellerUpdateComponent,
     HeaderComponent,
     FooterComponent,
-    SearchPageComponent
+    SearchPageComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +46,7 @@ import { SearchPageComponent } from './search-page/search-page.component';
     ReactiveFormsModule,
     HttpClientModule,
     NgbModule,
+    MatTabsModule
     
   ],
   providers: [],
